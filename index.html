@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ke Wang</title>
+  <meta name="description" content="Ke Wang — Applied Scientist at Amazon working on LLM/VLM post-training.">
+  <style>
+    :root {
+      --text: #222;
+      --muted: #666;
+      --link: #1a5fb4;
+      --line: #e4e4e4;
+      --nav-bg: #2f3b4c;
+      --nav-text: #fff;
+      --bg: #fff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #e6e6e6;
+        --muted: #a0a0a0;
+        --link: #78aeff;
+        --line: #333;
+        --nav-bg: #1c232d;
+        --nav-text: #f0f0f0;
+        --bg: #121417;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 10;
+      background: var(--nav-bg);
+    }
+    nav ul {
+      list-style: none; margin: 0 auto; padding: 0;
+      max-width: 1000px; display: flex; overflow-x: auto;
+    }
+    nav li { flex: 1; }
+    nav a {
+      display: block; padding: 14px 10px; text-align: center;
+      color: var(--nav-text); font-weight: 600; white-space: nowrap;
+    }
+    nav a:hover { background: rgba(255,255,255,.1); text-decoration: none; }
+
+    main { max-width: 1000px; margin: 0 auto; padding: 80px 16px 60px; }
+
+    .profile { display: flex; gap: 28px; align-items: flex-start; }
+    .profile img {
+      width: 200px; height: 200px; object-fit: cover;
+      border-radius: 8px; flex-shrink: 0; background: var(--line);
+    }
+    .profile h1 { font-size: 26px; margin: 0 0 4px; }
+    .profile .role { margin: 0 0 10px; }
+    .links a { margin-right: 4px; }
+    .links .sep { color: var(--muted); margin-right: 4px; }
+    @media (max-width: 640px) {
+      .profile { flex-direction: column; align-items: center; text-align: center; }
+    }
+
+    section { border-top: 1px solid var(--line); margin-top: 36px; padding-top: 20px; }
+    h2 { font-size: 20px; margin: 0 0 14px; }
+    ul.entries, ol.pubs { padding-left: 22px; margin: 0; }
+    ul.entries li, ol.pubs li { margin-bottom: 16px; }
+    .meta { color: var(--muted); font-style: italic; }
+    .note { color: var(--muted); font-size: 14px; margin: 0 0 10px; }
+    .venue { font-weight: 600; }
+    footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#top">Home</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#talks">Talks</a></li>
+      <li><a href="#media">Media</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#services">Services</a></li>
+    </ul>
+  </nav>
+
+  <main id="top">
+    <div class="profile">
+      <img src="assets/photo.jpg" alt="Ke Wang">
+      <div>
+        <h1>Ke Wang</h1>
+        <p class="role"><b>Applied Scientist</b> at <a href="https://www.amazon.science/">Amazon</a></p>
+        <p><b>Research Interests:</b> LLM Post-Training, Nonlinear Optimization, AI for Science</p>
+        <p><b>About me:</b> I am an Applied Scientist at Amazon, where I work on post-training for large language
+          and vision-language models, focusing on preference alignment, long-context understanding, personalization,
+          and efficient reasoning, across dense and MoE models from 4B to 100B+ parameters.
+          I received my Ph.D. in Chemical Engineering from the University of Notre Dame, advised by Prof. <a href="https://dowlinglab.nd.edu/people/professor-alexander-w-dowling/">Alexander W. Dowling</a>. My PhD research combined
+          operations research and machine learning, using active learning to solve
+          nonlinear optimization problems and accelerate materials discovery.</p>
+        <p class="links">
+          E-mail: <a href="mailto:dipper.wang5@gmail.com">dipper.wang5@gmail.com</a><br>
+          <a href="https://scholar.google.com/citations?hl=en&user=BhuVOcoAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a><span class="sep">|</span>
+          <a href="https://www.linkedin.com/in/ke-wang-41a0b6206/">LinkedIn</a>
+        </p>
+      </div>
+    </div>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul class="entries">
+        <li>
+          <b>Applied Scientist</b> at <a href="https://www.amazon.com/">Amazon</a>
+          <br><span class="meta">Feb 2025 – Present</span>
+          <br>LLM post-training for Amazon Search AI Overview and the <i>Vantage</i> domain foundation models
+          (shopping behavior simulation, A/B-test simulation, persona generation).
+        </li>
+        <li>
+          <b>Applied Scientist Intern</b> at <a href="https://www.amazon.com/">Amazon</a>
+          <br><span class="meta">Sep 2024 – Dec 2024</span>
+          <br>Mixed-integer optimization for reliability engineering scheduling.
+        </li>
+        <li>
+          <b>Machine Learning Engineer Intern</b> at TikTok
+          <br><span class="meta">May 2024 – Aug 2024</span>
+          <br>Efficient multimodal LLMs: adaptive visual token compression for the TikTok Shop foundation MLLM.
+        </li>
+        <li>
+          <b>Research Assistant</b> at the <a href="https://www.nd.edu/">University of Notre Dame</a>
+          <br><span class="meta">Feb 2021 – Feb 2025</span>
+          <br>AI for Science: machine learning, active learning, and nonlinear optimization for
+          materials discovery.
+        </li>
+      </ul>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <p class="note">* indicates equal contribution. See <a href="https://scholar.google.com/citations?hl=en&user=BhuVOcoAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a> for the full list.</p>
+      <ol class="pubs">
+        <li>Physics-Guided Policy Optimization with Self-Distillation.
+          [<a href="https://arxiv.org/abs/2606.03620">Paper</a>]
+          <br><b>Ke Wang*</b>, Y. Wu*, H. Liu, C. Jia, D. Chen, K. Wei
+          <br><span class="venue">ICML 2026 Workshop on High-dimensional Learning Dynamics (HiLD)</span>
+        </li>
+        <li>Hindsight-Anchored Policy Optimization: Turning Failure into Feedback in Sparse Reward Settings.
+          [<a href="https://arxiv.org/abs/2603.11321">Paper</a>]
+          <br>Y. Wu*, <b>Ke Wang*</b>, D. Chen, K. Wei
+          <br><span class="venue">ICLR 2026 Workshop on Catch, Adapt, and Operate: Monitoring ML Models Under Drift (CAO)</span>
+        </li>
+        <li>Bayesian Optimization Methods for Nonlinear Model Calibration.
+          [<a href="https://doi.org/10.1021/acs.iecr.4c03468">Paper</a>]
+          <br>M. N. Carlozo, <b>Ke Wang</b>, A. W. Dowling
+          <br><span class="venue">Industrial &amp; Engineering Chemistry Research, 2025</span>
+        </li>
+        <li>LLaVA-Zip: Adaptive Visual Token Compression with Intrinsic Image Information.
+          [<a href="https://arxiv.org/abs/2412.08771">Paper</a>]
+          <br><b>Ke Wang*</b>, H. Xuan*
+          <br><span class="venue">arXiv 2024</span>
+        </li>
+        <li>Bayesian Optimization of Low-Temperature Nonthermal Plasma Jet Sintering of Nanoinks.
+          [<a href="https://doi.org/10.1021/acsami.4c07936">Paper</a>]
+          <br>Z. Cheng, <b>Ke Wang</b>, A. M. N. Tanvir, W. Shang, T. Luo, Y. Zhang, A. W. Dowling, et al.
+          <br><span class="venue">ACS Applied Materials &amp; Interfaces, 2024</span>
+        </li>
+        <li>High-Performance Thermoelectric Composites via Scalable and Low-Cost Ink Processing.
+          [<a href="https://doi.org/10.1039/D4EE00866A">Paper</a>]
+          <br>A. N. M. Tanvir, M. O. Bappy, M. Zeng, W. Shang, <b>Ke Wang</b>, K. Song, Y. Liu, et al.
+          <br><span class="venue">Energy &amp; Environmental Science, 2024</span>
+        </li>
+        <li>Machine Learning-Assisted 3D Printing of Thermoelectric Materials of Ultrahigh Performances at Room Temperature.
+          [<a href="https://doi.org/10.1039/D4TA03062A">Paper</a>]
+          <br>K. Song, G. Xu, A. N. M. Tanvir, <b>Ke Wang</b>, M. O. Bappy, H. Yang, W. Shang, et al.
+          <br><span class="venue">Journal of Materials Chemistry A, 2024</span>
+        </li>
+        <li>Hybrid Data-Driven Discovery of High-Performance Silver Selenide-Based Thermoelectric Composites.
+          [<a href="https://doi.org/10.1002/adma.202212230">Paper</a>]
+          <br>W. Shang, M. Zeng, A. N. M. Tanvir, <b>Ke Wang</b>, M. Saeidi-Javash, A. W. Dowling, et al.
+          <br><span class="venue">Advanced Materials, 2023</span>
+        </li>
+        <li>When Physics-Informed Data Analytics Outperforms Black-Box Machine Learning: A Case Study in Thickness Control for Additive Manufacturing.
+          [<a href="https://doi.org/10.1016/j.dche.2022.100076">Paper</a>]
+          <br><b>Ke Wang</b>, M. Zeng, J. Wang, W. Shang, Y. Zhang, T. Luo, A. W. Dowling
+          <br><span class="venue">Digital Chemical Engineering, 2023</span>
+        </li>
+        <li>Data Science for Thermodynamic Modeling: Case Study for Ionic Liquid and Hydrofluorocarbon Refrigerant Mixtures.
+          [<a href="https://doi.org/10.1016/j.fluid.2023.113833">Paper</a>]
+          <br>B. J. Befort, A. Garciadiego, J. Wang, <b>Ke Wang</b>, G. Franco, E. J. Maginn, et al.
+          <br><span class="venue">Fluid Phase Equilibria, 2023</span>
+        </li>
+        <li>Bayesian Optimization for Chemical Products and Functional Materials.
+          [<a href="https://doi.org/10.1016/j.coche.2021.100728">Paper</a>]
+          <br><b>Ke Wang</b>, A. W. Dowling
+          <br><span class="venue">Current Opinion in Chemical Engineering, 2022</span>
+        </li>
+        <li>Machine Learning-Assisted Ultrafast Flash Sintering of High-Performance and Flexible Silver–Selenide Thermoelectric Devices.
+          [<a href="https://doi.org/10.1039/D2EE01844F">Paper</a>]
+          <br>M. Saeidi-Javash, <b>Ke Wang</b>, M. Zeng, T. Luo, A. W. Dowling, Y. Zhang
+          <br><span class="venue">Energy &amp; Environmental Science, 2022</span>
+        </li>
+        <li>Gaussian Process Regression Machine Learning Models for Photonic Sintering.
+          [<a href="https://doi.org/10.1016/B978-0-323-85159-6.50303-1">Paper</a>]
+          <br><b>Ke Wang</b>, M. Saeidi-Javash, M. Zeng, Z. Liu, Y. Zhang, T. Luo, A. W. Dowling
+          <br><span class="venue">Computer Aided Chemical Engineering, 2022</span>
+        </li>
+      </ol>
+    </section>
+
+    <section id="talks">
+      <h2>Conference Presentations</h2>
+      <ol class="pubs">
+        <li>Adaptive Experimental Design: Machine Learning Directed Optimization of Additive Manufacturing for Thermoelectric Materials and Devices.
+          <br><b>Ke Wang</b>, A. Dowling
+          <br><span class="venue">INFORMS Annual Meeting, 2024</span>
+        </li>
+        <li>Non-Thermal Plasma Jet Sintering of Indium Tin Oxide (ITO) Thin Films Based on Bayesian Optimization.
+          <br>Z. Cheng, <b>Ke Wang</b>, W. Shang, A. Tanvir, D. Go, A. Dowling, T. Luo, Y. Zhang
+          <br><span class="venue">APS Annual Gaseous Electronics Conference, 2023</span>
+        </li>
+        <li>Accelerating Low-Temperature Processing of Printed Nanoinks Using Machine Learning and Bayesian Optimization of Non-Thermal Plasma Jet Sintering.
+          <br>Z. Cheng, <b>Ke Wang</b>, A. N. Tanvir, W. Shang, Y. Zhang, T. Luo, A. W. Dowling, D. B. Go
+          <br><span class="venue">Michigan Institute for Plasma Science and Engineering (MIPSE) Graduate Student Symposium, 2023</span>
+        </li>
+        <li>Adaptively Optimizing Experiments: Past, Present, and Future.
+          <br>A. Dowling, J. Wang, <b>Ke Wang</b>, K. Jones
+          <br><span class="venue">SIAM Conference on Optimization, 2023</span>
+        </li>
+        <li>Hierarchical Bayesian Optimization of Gray-Box Models.
+          <br>K. Jones, <b>Ke Wang</b>, A. Dowling
+          <br><span class="venue">AIChE Annual Meeting, 2023</span>
+        </li>
+        <li>Optimization of Modern Manufacturing for Thermoelectric Material Using Machine Learning and Data Science.
+          <br><b>Ke Wang</b>, A. W. Dowling
+          <br><span class="venue">Foundations of Process/Product Analytics and Machine Learning (FOPAM), 2023</span>
+        </li>
+        <li>Bayesian Optimization in Material Science and Applications to Thermoelectric Materials.
+          <br><b>Ke Wang</b>
+          <br><span class="venue">INFORMS Annual Meeting, 2022</span>
+        </li>
+        <li>Bayesian Optimization Considering Experimental and Physical Constraints – Case Study of Flash Sintering.
+          <br><b>Ke Wang</b>, A. W. Dowling
+          <br><span class="venue">International Conference on Continuous Optimization (ICCOPT), 2022</span>
+        </li>
+      </ol>
+    </section>
+
+    <section id="media">
+      <h2>Media Coverage</h2>
+      <ul class="entries">
+        <li><b>Amazon Science</b> featured our post-training research (2026):
+          <a href="https://www.amazon.science/publications/hindsight-anchored-policy-optimization-turning-failure-into-feedback-in-sparse-reward-settings">Hindsight-Anchored Policy Optimization</a>
+          and <a href="https://www.amazon.science/publications/physics-guided-policy-optimization-with-self-distillation">Physics-Guided Policy Optimization</a>.
+          HAPO was also featured in <a href="https://www.machinebrief.com/news/hindsight-anchored-policy-optimization-a-new-era-for-reinfor-3050">Machine Brief</a> as &ldquo;A New Era for Reinforcement Learning.&rdquo;
+        </li>
+        <li><b>High-performance thermoelectric composites via scalable ink processing</b> (2024), covered by
+          <a href="https://ame.nd.edu/?p=4622">Notre Dame Engineering</a> and
+          <a href="https://techxplore.com/news/2024-07-ink-based-method-recipe-thermoelectric.html">TechXplore</a>.
+        </li>
+        <li><b>Adaptively Optimizing Experiments: Past, Present, and Future</b> (SIAM Optimization 2023), listed in the
+          <a href="https://netl.doe.gov/sites/default/files/publication/SSAE%20Aug3.5%20Newsletter_v0_20230807.pdf">National Energy Technology Laboratory (NETL) SSAE Newsletter</a>, August 2023.
+        </li>
+        <li><b>Machine learning-assisted ultrafast flash sintering of thermoelectric devices</b> (2022), covered by
+          <a href="https://www.sciencedaily.com/releases/2022/11/221108142924.htm">ScienceDaily</a>,
+          <a href="https://www.energy-daily.com/reports/Researchers_develop_superfast_new_method_to_manufacture_high_performance_thermoelectric_devices_999.html">Energy Daily</a>,
+          <a href="https://news.nd.edu/news/flash-a-superfast-new-method-to-manufacture-high-performance-thermoelectric-devices-for-energy-harvesting-and-cooling/">Notre Dame News</a>,
+          <a href="https://techxplore.com/news/2022-11-superfast-method-high-performance-thermoelectric-devices.html">TechXplore</a>, and
+          <a href="https://labmanager.com/new-method-to-manufacture-high-performance-thermoelectric-devices-29174">Lab Manager</a>.
+        </li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul class="entries">
+        <li>
+          <b>Ph.D. in Chemical Engineering</b>, <a href="https://www.nd.edu/">University of Notre Dame</a>
+          <br><span class="meta">2021 – 2025</span>
+          <br>Dissertation: <i>Operations Research Meets Machine Learning: Bayesian Optimization for Accelerating
+          Product Development in Additive Manufacturing and Thermoelectric Materials</i>
+        </li>
+        <li>
+          <b>M.S. in Mathematics and Statistics</b>, <a href="https://www.nd.edu/">University of Notre Dame</a>
+          <br><span class="meta">2021 – 2023</span>
+        </li>
+        <li>
+          <b>B.E. in Electrical Engineering</b>, Sichuan University
+          <br><span class="meta">2016 – 2020</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <ul class="entries">
+        <li><b>Reviewer:</b> ICLR, ICML, Journal of Applied Statistics, Computers and Electrical Engineering, Computers &amp; Industrial Engineering,
+          Industrial &amp; Engineering Chemistry Research, Computers and Chemical Engineering, PLOS ONE,
+          Computers and Electronics in Agriculture, Case Studies in Chemical and Environmental Engineering,
+          Sustainable Operations and Computers, Chemical Engineering Journal Advances,
+          Robotics and Computer-Integrated Manufacturing</li>
+      </ul>
+    </section>
+
+    <footer>© 2026 Ke Wang</footer>
+  </main>
+</body>
+</html>
